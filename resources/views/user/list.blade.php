@@ -1,1 +1,4 @@
-<?php dd('Custom Listing for User') ?>
+@extends('layout')
+
+@section('content')
+@stop

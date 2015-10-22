@@ -1,0 +1,26 @@
+{
+  "name": "feedme",
+  "version": "0.0.1",
+  "homepage": "https://github.com/krisanalfa/feedme",
+  "authors": [
+    "Krisan Alfa Timur <krisan47@gmail.com>"
+  ],
+  "description": "Feedme POC",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0",
+    "jquery": "~2.1.4"
+  }
+}

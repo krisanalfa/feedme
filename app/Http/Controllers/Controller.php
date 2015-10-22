@@ -10,6 +10,8 @@ class Controller extends BaseController
 
     protected $data = [];
 
+    protected $layout = 'layout';
+
     public function __construct()
     {
         $this->id = app('app.namespace');

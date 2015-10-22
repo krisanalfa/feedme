@@ -3,6 +3,7 @@
 return [
     // CRUD RESOURCES
     'routes' => [
-        'user' => 'UserController'
+        'user' => 'UserController',
+        'application' => 'ApplicationController',
     ],
 ];

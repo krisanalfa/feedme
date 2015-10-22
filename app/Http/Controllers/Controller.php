@@ -12,12 +12,46 @@ class Controller extends BaseController
 
     public function __construct()
     {
-        $class = get_class($this);
-        $exploded = explode('\\', $class);
-        $baseClass = end($exploded);
+        $this->id = app('app.namespace');
+    }
 
-        $explodedBaseClass = explode('_', snake_case($baseClass));
-        $this->id = reset($explodedBaseClass);
+    public function index()
+    {
+        return $this->render('list', []);
+    }
+
+    public function create()
+    {
+    }
+
+    public function make()
+    {
+        dd(__METHOD__);
+    }
+
+    public function read($id)
+    {
+        dd(__METHOD__, get_defined_vars());
+    }
+
+    public function update($id)
+    {
+        dd(__METHOD__, get_defined_vars());
+    }
+
+    public function change($id)
+    {
+        dd(__METHOD__, get_defined_vars());
+    }
+
+    public function delete($id)
+    {
+        dd(__METHOD__, get_defined_vars());
+    }
+
+    public function remove($id)
+    {
+        dd(__METHOD__, get_defined_vars());
     }
 
     protected function getProperView($view)

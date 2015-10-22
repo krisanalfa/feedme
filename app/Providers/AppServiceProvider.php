@@ -31,6 +31,8 @@ class AppServiceProvider extends ServiceProvider
 
             // Registerring
             $app->group(['prefix' => '/'.$path, 'namespace' => $namespace], function () use ($app, $controller, $path) {
+                $app->bind('app.namespace', function () use ($path) { return $path; }, true);
+
                 $app->get('/', ['as' => $path.'.index', 'uses' => $controller.'@index']);
 
                 $app->get('/create', ['as' => $path.'.create', 'uses' => $controller.'@create']);
